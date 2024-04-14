@@ -1,149 +1,128 @@
-<!-- ENTRANTES  -->
-
+<?xml version="1.0" encoding="UTF-8"?>
 <platos>
+    <!-- ENTRANTES  -->
     <categoria name="Entrantes">
-        <entrante nombre="Steak Tartar de Solomillo de vaca gallega" precio="18,95€" >
+        <plato nombre="Steak Tartar de Solomillo de vaca gallega" precio="18,95€">
             <caracteristicas> 
-                <item tipo1="mostaza"></item>
-                <item tipo2="huevo"></item>
+                <item tipo1="mostaza" tipo2="huevo"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Tartar de Salmón con piña asada y aguacate" precio="17,90€">
+        </plato>
+        <plato nombre="Tartar de Salmón con piña asada y aguacate" precio="17,90€">
             <caracteristicas> 
-                <item tipo3="pescado"></item>
-                <item tipo4="soja"></item>
+                <item tipo3="pescado" tipo4="soja"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Carpaccio de solomillo de vaca" precio="18,20€">
+        </plato>
+        <plato nombre="Carpaccio de solomillo de vaca" precio="18,20€">
             <ingrediente nombre="champiñones"/>
             <ingrediente nombre="rúcula"/>
             <ingrediente nombre="pistacho"/>
             <ingrediente nombre="parmesano"/>
             <caracteristicas> 
-                <item tipo5="avellana"></item>
-                <item tipo6="leche"></item>
+                <item tipo5="avellana" tipo6="leche"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Carpaccio de entrecot madurado ahumado" precio="18,50€">
+        </plato>
+        <plato nombre="Carpaccio de entrecot madurado ahumado" precio="18,50€">
             <ingrediente nombre="aceite de oliva"/>
             <ingrediente nombre="semillas de mostaza"/>
             <caracteristicas> 
-                <item tipo1="mostaza"></item>
-                <item tipo2="huevo"></item>
+                <item tipo1="mostaza" tipo2="huevo"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Patatas mini al Romero" precio="7,90€"></entrante>
-        <entrante nombre="Ceviche de Corvina y Langostino" precio="16,50€">
+        </plato>
+        <plato nombre="Patatas mini al Romero" precio="7,90€"/>
+        <plato nombre="Ceviche de Corvina y Langostino" precio="16,50€">
             <caracteristicas> 
-                <item tipo3="pescado"></item>
-                <item tipo7="marisco"></item>
+                <item tipo3="pescado" tipo7="marisco"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Tostadas de maíz con atún aleta amarilla y guacamole" precio="9,90€">
+        </plato>
+        <plato nombre="Tostadas de maíz con atún aleta amarilla y guacamole" precio="9,90€">
             <caracteristicas> 
-                <item tipo8="pescado"></item>
-                <item tipo4="soja"></item>
+                <item tipo8="gluten" tipo4="soja"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Croquetas de asado de vaca" precio="2,10€ uni">
+        </plato>
+        <plato nombre="Croquetas de asado de vaca" precio="2,10€ uni">
             <caracteristicas> 
-                <item tipo8="gluten"></item>
-                <item tipo2="huevo"></item>
-                <item tipo6="leche"></item>
-                <item tipo9="vegetal"></item>
+                <item tipo8="gluten" tipo2="huevo" tipo6="leche" tipo9="vegetal"/>
             </caracteristicas>
-        </entrante>
-        <entrante nombre="Dados de solomillo con portobellos" precio="11,50€"></entrante>
-        <entrante nombre="Calamares andaluza con mayonesa de cítricos" precio="14,90€">
+        </plato>
+        <plato nombre="Dados de solomillo con portobellos" precio="11,50€"/>
+        <plato nombre="Calamares andaluza con mayonesa de cítricos" precio="14,90€">
             <caracteristicas> 
-                <item tipo8="gluten"></item>
-                <item tipo2="huevo"></item>
-                <item tipo10="molusco"></item>
+                <item tipo8="gluten" tipo2="huevo" tipo10="molusco"/>
             </caracteristicas>
-        </entrante>
+        </plato>
     </categoria>
 
-<!-- ENSALADAS  -->
-
+    <!-- ENSALADAS  -->
     <categoria name="Ensaladas">
-        <fresco nombre="Ensalada de Langostinos con mango y aguacate" precio="13,50€">
+        <plato nombre="Ensalada de Langostinos con mango y aguacate" precio="13,50€">
           <ingrediente nombre="pipas caramelizadas"/>
           <ingrediente nombre="vinagreta de fresa"/>
           <caracteristicas> 
-              <item tipo7="marisco"></item>
-              <item tipo5="avellana"></item>
+              <item tipo7="marisco" tipo5="avellana"/>
           </caracteristicas>
-        </fresco>
-        <fresco nombre="Ensalada de Queso tomino a la brasa" precio="13,50€">
+        </plato>
+        <plato nombre="Ensalada de Queso tomino a la brasa" precio="13,50€">
           <ingrediente nombre="vinagreta blanca"/>
           <caracteristicas> 
-              <item tipo6="leche"></item>
+              <item tipo6="leche"/>
           </caracteristicas>
-        </fresco>
-        <fresco nombre="Ensalada de la Huerta con pistachos" precio="9,50€">
+        </plato>
+        <plato nombre="Ensalada de la Huerta con pistachos" precio="9,50€">
           <caracteristicas> 
-              <item tipo5="avellana"></item>
+              <item tipo5="avellana"/>
           </caracteristicas>
-        </fresco>
+        </plato>
     </categoria>
 
-<!-- PESCADO  -->
-
+    <!-- PESCADO  -->
     <categoria name="Pescados">
-        <pescado nombre="Pulpo a la brasa con parmentier y aceite de guajillo" precio="21,50€">
+        <plato nombre="Pulpo a la brasa con parmentier y aceite de guajillo" precio="21,50€">
           <caracteristicas> 
-              <item tipo10="molusco"></item>
-              <item tipo6="leche"></item>
+              <item tipo10="molusco" tipo6="leche"/>
           </caracteristicas>
-        </pescado>
-        <pescado nombre="Salmón a la brasa con noodles orientales" precio="18,50€">
+        </plato>
+        <plato nombre="Salmón a la brasa con noodles orientales" precio="18,50€">
           <caracteristicas> 
-              <item tipo3="pescado"></item>
-              <item tipo11="sesamo"></item>
-              <item tipo8="gluten"></item>
-              <item tipo4="soja"></item>
+              <item tipo3="pescado" tipo11="sesamo" tipo8="gluten" tipo4="soja"/>
           </caracteristicas>
-        </pescado>
-        <pescado nombre="Rape a la brasa" precio="21,00€">
+        </plato>
+        <plato nombre="Rape a la brasa" precio="21,00€">
           <caracteristicas> 
-              <item tipo3="pescado"></item>
+              <item tipo3="pescado"/>
           </caracteristicas>
-        </pescado>
+        </plato>
     </categoria>
 
-<!-- CARNES  -->
-
+    <!-- CARNES  -->
     <categoria name="Carnes">
-        <carne nombre="Entrecot de vaca gallega con maduración en seco 60 días 500gr" precio="38,00€"></carne>
-        <carne nombre="Lomo alto Black Angus Argentino 350gr" precio="38,90€"></carne>
-        <carne nombre="Lomo Bajo Black Angus Argentino 350gr" precio="35,90€"></carne>
-        <carne nombre="Vacío Alberdeen Uruguay 250gr" precio="22,50€"></carne>
-        <carne nombre="Picaña Hereford Argentino al Rodizio 350gr" precio="27,90€"></carne>
-        <carne nombre="Lomo Wagyu Nacional 250gr" precio="43,00€"></carne>
-        <carne nombre="Solomillo de vaca gallega 250gr" precio="29,95€"></carne>
-        <carne nombre="Solomillo de novillo Black Angus Argentina 250gr" precio="38,00€"></carne>
-        <carne nombre="Pollo Picantón a la brasa" precio="14,90€"></carne>
-        <carne nombre="Entraña de ternera gallega 250gr" precio="16,90€"></carne>
+        <plato nombre="Entrecot de vaca gallega con maduración en seco 60 días 500gr" precio="38,00€"/>
+        <plato nombre="Lomo alto Black Angus Argentino 350gr" precio="38,90€"/>
+        <plato nombre="Lomo Bajo Black Angus Argentino 350gr" precio="35,90€"/>
+        <plato nombre="Vacío Alberdeen Uruguay 250gr" precio="22,50€"/>
+        <plato nombre="Picaña Hereford Argentino al Rodizio 350gr" precio="27,90€"/>
+        <plato nombre="Lomo Wagyu Nacional 250gr" precio="43,00€"/>
+        <plato nombre="Solomillo de vaca gallega 250gr" precio="29,95€"/>
+        <plato nombre="Solomillo de novillo Black Angus Argentina 250gr" precio="38,00€"/>
+        <plato nombre="Pollo Picantón a la brasa" precio="14,90€"/>
+        <plato nombre="Entraña de ternera gallega 250gr" precio="16,90€"/>
     </categoria>
 
-<!-- Postres -->
-
+    <!-- Postres -->
     <categoria name="Postres">
-        <postre nombre="Helado" precio="3,90€"></postre>
-        <postre nombre="Flan" precio="2,30€"></postre>
-        <postre nombre="Bombones" precio="4,50€"></postre>
-        <postre nombre="Tiramisú" precio="4,80€"></postre>
-        <postre nombre="Tarta de queso" precio="4,90€"></postre>
+        <plato nombre="Helado" precio="3,90€"/>
+        <plato nombre="Flan" precio="2,30€"/>
+        <plato nombre="Bombones" precio="4,50€"/>
+        <plato nombre="Tiramisú" precio="4,80€"/>
+        <plato nombre="Tarta de queso" precio="4,90€"/>
     </categoria>
 
-<!-- Bebidas -->
-
+    <!-- Bebidas -->
     <categoria name="Bebidas">
-        <postre nombre="Agua" precio="1,50€"></postre>
-        <postre nombre="Refresco" precio="2,40€"></postre>
-        <postre nombre="Cerveza" precio="3,10€"></postre>
-        <postre nombre="Vino" precio="12,80€"></postre>
-        <postre nombre="Sangría" precio="8,90€"></postre>
+        <plato nombre="Agua" precio="1,50€"/>
+        <plato nombre="Refresco" precio="2,40€"/>
+        <plato nombre="Cerveza" precio="3,10€"/>
+        <plato nombre="Vino" precio="12,80€"/>
+        <plato nombre="Sangría" precio="8,90€"/>
     </categoria>
-
 </platos>
+

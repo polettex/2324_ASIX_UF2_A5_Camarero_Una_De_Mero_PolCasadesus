@@ -1,3 +1,72 @@
-img {
-    width: 10px;
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+/* Estilos de la barra de navegación */
+.navegador {
+    background-color: #e9ecef;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px; /* Añadido para separar el contenido del borde */
+  }
+
+/* Estilos de las categorías y platos */
+.categoria {
+  margin-top: 60px;
+}
+
+.categoria-title {
+  color: #dc3545;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.plato {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plato-nombre {
+  font-weight: bold;
+  color: #333;
+}
+
+.plato-price {
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.plato-ingrediente {
+  color: #666;
+}
+
+.plato-icono {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Estilos para los iconos de los ingredientes */
+.plato-icono img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
 }
