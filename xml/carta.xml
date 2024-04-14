@@ -83,7 +83,7 @@
         </plato>
         <plato nombre="Salmón a la brasa con noodles orientales" precio="18,50€">
           <caracteristicas> 
-              <item tipo3="pescado" tipo11="sesamo" tipo8="gluten" tipo4="soja"/>
+              <item tipo3="pescado" tipo8="gluten" tipo4="soja"/>
           </caracteristicas>
         </plato>
         <plato nombre="Rape a la brasa" precio="21,00€">

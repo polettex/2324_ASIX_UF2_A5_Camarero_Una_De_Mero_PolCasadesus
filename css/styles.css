@@ -1,24 +1,30 @@
 /* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
   color: #333;
 }
 
-.container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #cacaca;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Estilos de la barra de navegación */
 .navegador {
-    background-color: #e9ecef;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    padding: 20px; /* Añadido para separar el contenido del borde */
-  }
+  background-color: #e9ecef;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px;
+}
 
 /* Estilos de las categorías y platos */
 .categoria {
@@ -26,47 +32,85 @@ justify-content: space-around;
 }
 
 .categoria-title {
-  color: #dc3545;
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: red;
 }
 
 .plato {
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.union {
+  display: flex;
+  justify-content: space-between;
 }
 
 .plato-nombre {
+  flex-grow: 1;
   font-weight: bold;
-  color: #333;
 }
 
 .plato-price {
-  color: #dc3545;
-  font-size: 18px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 .plato-ingrediente {
-  color: #666;
+  margin-top: 0.5rem;
 }
 
 .plato-icono {
   display: inline-block;
-  margin-right: 5px;
 }
 
 /* Estilos para los iconos de los ingredientes */
 .plato-icono img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.alergenos {
+  margin-top: 20px; 
+}
+
+table {
+  border-collapse: collapse; 
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px; 
+}
+
+td {
+  padding: 10px;
+  text-align: center; 
+}
+
+td img {
+  width: 50px; 
+  height: 50px; 
 }
 
 /* Estilos para la versión móvil */
-@media (max-width: 576px) {
-  .container {
-    padding: 10px;
+@media (max-width: 600px) {
+  .menu {
+    padding: 1rem; 
   }
+  .categoria {
+    margin-top: 30px; 
+  }
+  .plato {
+    margin-bottom: 0.5rem; 
+  }
+  .plato-price {
+    margin-left: 0.5rem; 
+  }
+  table {
+    font-size: 12px; 
+  }
+
 }

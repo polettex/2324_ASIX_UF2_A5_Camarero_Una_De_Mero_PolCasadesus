@@ -46,7 +46,7 @@
   </nav>
 
   <!-- Contenido de la carta -->
-  <div class="container" id="inicio">
+  <div class="menu" id="inicio">
     <?php
       $menu = simplexml_load_file('xml/carta.xml');
       foreach ($menu->categoria as $categoria) {
@@ -55,8 +55,10 @@
         echo '<ul>';
         foreach ($categoria->plato as $plato) {
           echo '<li class="plato">';
+          echo '<div class="union">';
           echo '<div class="plato-nombre">' . $plato['nombre'] . '</div>';
           echo '<div class="plato-price">' . $plato['precio'] . '</div>';
+          echo '</div>';
           echo '<div class="plato-icon">';
           if(isset($plato->caracteristicas->item['tipo1']) && $plato->caracteristicas->item['tipo1'] == 'mostaza'){
             echo '<div class="plato-icono" title="Contiene mostaza"><img src="img/mostaza.png" alt="Mostaza"></div>';
@@ -88,23 +90,57 @@
           if(isset($plato->caracteristicas->item['tipo10']) && $plato->caracteristicas->item['tipo10'] == 'molusco'){
             echo '<div class="plato-icono" title="Contiene moluscos"><img src="img/moluscos.png" alt="Moluscos"></div>';
           }
-          if(isset($plato->caracteristicas->item['tipo11']) && $plato->caracteristicas->item['tipo11'] == 'sesamo'){
-            echo '<div class="plato-icono" title="Contiene sesamo"><img src="img/sesamo.png" alt="Sesamo"></div>';
+          echo '</div>';
+          echo '<ul class="plato-ingrediente">';
+          foreach ($plato->ingrediente as $ingrediente) {
+            echo '<li>' . $ingrediente['nombre'] . '</li>';
           }
-          echo '</div';
-          echo '<div class="plato-ingrediente">' . $plato->ingrediente['nombre'] . '</div>';
+          echo '</ul>';
           echo '</li>';
-          //echo '<div class="dish-calorias">' . $dish->calorias . '</div>';
+
         }
         echo '</ul>';
         echo '</div>';
       }
     ?>
+
+    <!-- Tabla alérgenos -->
+    <div class="alergenos">
+    <table> 
+        <tr>
+          <td><img src="./img/mostaza.png" alt="mostaza"></td>
+          <td><img src="./img/huevo.png" alt="huevo"></td>
+          <td><img src="./img/pescado.png" alt="pescado"></td>
+          <td><img src="./img/soja.png" alt="soja"></td>
+          <td><img src="./img/frutos-secos.png" alt="frutos secos"></td> 
+        </tr> 
+        <tr>
+          <td>MOSTAZA</td>
+          <td>HUEVO</td>
+          <td>PESCADO</td>
+          <td>SOJA</td> 
+          <td>FRUTOS SECOS</td> 
+        </tr>
+        <tr>
+          <td><img src="./img/lacteos.png" alt="lacteos"></td>
+          <td><img src="./img/mariscos.png" alt="mariscos"></td>
+          <td><img src="./img/cereales-gluten.png" alt="gluten"></td>
+          <td><img src="./img/apio.png" alt="vegetales"></td>
+          <td><img src="./img/moluscos.png" alt="moluscos"></td> 
+        </tr> 
+        <tr>
+          <td>LACTEOS</td>
+          <td>MARISCOS</td>
+          <td>GLUTEN</td>
+          <td>VEGETALES</td> 
+          <td>MOLUSCOS</td> 
+        </tr>
+  </table>
+</div>
+
   </div>
  
   <!-- Scripts -->
-  <!-- Link a FontAwesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- Link a Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQVVBQB8mY4WxG6Km9S5TBq/EqYMH2mcD5h0/WIQAXWr0OdKKhLc7ByhIdZYOOhR" crossorigin="anonymous"></script>
 </body>
